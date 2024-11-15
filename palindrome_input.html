@@ -1,0 +1,18 @@
+<script> 
+var a,n,num,rem,sum,i;
+a=parseInt(prompt("enter the starting num"));
+n=parseInt(prompt("enter the ending num"));
+for(i=a;i<=n;i++){
+    num=parseInt(i);
+     sum=0;
+    while(num!=0){
+        	//11
+       rem=parseInt(num%10);
+        sum=(sum*10)+rem;
+        num=parseInt(num/10);
+     }
+   
+    if(i==sum)
+      document.write("no : "+sum+" is palindrome <br>");
+}
+</script>
