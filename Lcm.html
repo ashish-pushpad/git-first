@@ -1,8 +1,8 @@
 <script>
 
-var n1=12,n2=27,max_n;
+var n1=12,n2=27,max_n,min_n,i,hcf;
 max_n=(n1>n2)?n1:n2;
-
+min_n=(n1<n2)?n1:n2;
 while(true)
 {
  if(max_n%n1==0 && max_n%n2==0)
@@ -12,6 +12,13 @@ while(true)
  }
  max_n++; 
 }
+for(i=1;i<=min_n;i++){
+ if(n1%i==0&&n2%n==0)
+    hcf=i;
+}
+ document.write("hcf of no "+n1+"&"+n2+"is"+hcf);
+  
+  
 
 
 
